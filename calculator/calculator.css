@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(108, 159, 225, 0.164);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: lightsteelblue;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+#quest {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+input[type="text"] {
+  text-align: center;
+  width: 220px;
+  height: 30px;
+}
+.btn-primary,
+.btn-secondary {
+  font-size: 1.2rem;
+  width: 100px;
+  height: 40px;
+}
+@media (max-width: 550px) {
+  input[type="text"] {
+    width: 45vw;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 30vw;
+  }
+}
+.bg-transition {
+  transition: background-color 1s ease;
+}

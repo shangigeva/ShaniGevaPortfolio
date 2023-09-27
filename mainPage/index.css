@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Opening area*/
+.openDiv {
+  background-image: url(images/backgroundPink.jpg);
+  text-align: center;
+  height: 200px;
+  color: #545151;
+  padding: 20px;
+}
+
+.openDiv h1 {
+  line-height: 3;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* about me*/
+.AboutMe {
+  text-align: center;
+  direction: ltr;
+  width: 100vw;
+  background-color: rgba(211, 211, 211, 0.2);
+  padding: 15px;
+}
+
+.change {
+  width: 130px;
+  height: 195px;
+  position: relative;
+  display: inline-block;
+}
+.change .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 1px;
+  z-index: 99;
+}
+.change:hover .img-top {
+  display: inline;
+}
+.img-top {
+  width: 153px;
+  height: 151px;
+}
+div .me1 {
+  text-align: center;
+  background-color: lightpink;
+  border: 1px solid rgb(218, 115, 132);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Landing pages*/
+.gallery {
+  padding: 20px;
+}
+.gallery h1 {
+  text-align: center;
+}
+.gallery p {
+  text-align: center;
+  direction: rtl;
+}
+.card .btn {
+  background-color: plum;
+}
+.card {
+  direction: rtl;
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card:hover .btn {
+  border: 2px solid plum;
+  background-color: rgba(221, 160, 221, 0.171);
+}
+.card-img-top {
+  width: 100%;
+  height: 8vw;
+  object-fit: cover;
+}
+
+/* contact area */
+.contact section {
+  background-color: #333333db;
+  direction: rtl;
+  font-family: "Heebo", sans-serif;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.contact section div {
+  margin-right: 2rem;
+  padding: 15px;
+}
+
+.contact h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact label {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.contact input {
+  background-color: #fff;
+  border: none;
+  border-bottom: 4px solid#ffcccb;
+  width: 80%;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #b97877;
+  font-family: "Heebo", sans-serif;
+  color: #fff;
+  width: 80%;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact .envelope {
+  width: 100%;
+  height: auto;
+}
+
+/* Lower area - nets */
+.contact .downArea {
+  background-color: #ffcccb;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.contact .downArea ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  color: #000;
+}
+
+.contact .downArea ul li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.contact img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Copyright */
+.contact .copy {
+  background-color: #333;
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  direction: rtl;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.contact .copy p {
+  font-size: 1rem;
+}
+
+/* mobile */
+@media (max-width: 550px) {
+  /* Landing pages*/
+  .card-img-top {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+  }
+
+  /* contact area*/
+  .contact section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact section div {
+    margin-right: 0;
+  }
+  .contact p,
+  .contact h1,
+  .contact input {
+    width: 100%;
+  }
+
+  /* Lower area - nets*/
+  .contact img {
+    width: 20px;
+    height: 20px;
+  }
+  .contact .downArea ul li {
+    font-size: 0.5rem;
+  }
+
+  /* Copyright */
+  .contact .copy p {
+    font-size: 0.6rem;
+  }
+}

@@ -1,0 +1,182 @@
+.firstSection {
+  @include flexCenter(row, 300px);
+  background-color: $bgc;
+  height: 40vh;
+  z-index: 999;
+
+  .text {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    h1 {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .whatsapp {
+    @include flexCenter(row, 0px);
+    background-color: #fff;
+    border: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-bottom: 200px;
+  }
+}
+
+.secondSection {
+  @include flexCenter(row, 15px);
+  height: 40vh;
+
+  div {
+    @include box();
+  }
+  h1 {
+    font-weight: bold;
+  }
+}
+.thirdSection {
+  text-align: right;
+  direction: rtl;
+  @include flexCenter(row, 100px);
+  justify-content: start;
+  margin-right: 95px;
+  background-color: #f0ffff;
+  .map {
+    background-color: $bgc;
+    padding: 55px;
+  }
+  .form {
+    width: 20vw;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    @include flexCenter(column, 10px);
+    justify-content: start;
+
+    form {
+      @include flexCenter(column, 10px);
+      input {
+        @include input();
+        width: 20vw;
+      }
+      button {
+        background-color: $bgc;
+        border: none;
+        height: 34px;
+        width: 400px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 20vw;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 50px;
+  @include flexCenter(row, 80px);
+  .icon {
+    @include icon($bgc);
+  }
+}
+
+@media (max-width: 550px) {
+  .firstSection {
+    @include flexCenter(column, 10px);
+    background-color: $bgc;
+    height: 40vh;
+    z-index: 999;
+
+    img {
+      width: 80px;
+      //   justify-content: start;
+      margin-left: 220px;
+    }
+
+    .text {
+      margin: 20px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+      h1 {
+        margin-bottom: 5px;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+    .whatsapp {
+      display: none;
+    }
+  }
+  .secondSection {
+    @include flexCenter(column, 20px);
+    margin-top: 40px;
+    height: fit-content;
+    margin-right: 20px;
+    margin-left: 20px;
+    h1 {
+      font-weight: bold;
+    }
+    div {
+      @include box();
+    }
+  }
+  .thirdSection {
+    text-align: right;
+    direction: rtl;
+    margin-right: 0px;
+    @include flexCenter(column-reverse, 10px);
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #f0ffff;
+    .map {
+      padding: 30px;
+      background-color: $bgc;
+      img {
+        width: 100%;
+      }
+    }
+    .form {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      h3 {
+        width: 70vw;
+        font-size: 1rem;
+      }
+      @include flexCenter(column, 10px);
+      justify-content: start;
+      h1 {
+        margin-top: 50px;
+        font-weight: bold;
+      }
+      form {
+        @include flexCenter(column, 10px);
+
+        input {
+          @include input();
+          background-color: white;
+          width: 70vw;
+        }
+        lable {
+          font-weight: bold;
+        }
+        button {
+          margin-bottom: 20px;
+          margin-bottom: 20px;
+          background-color: $bgc;
+          border: none;
+          height: 34px;
+          width: 70vw;
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 50px;
+    @include flexCenter(row, 20px);
+    .icon {
+      @include icon($bgc);
+    }
+  }
+}

@@ -1,0 +1,138 @@
+/* נאב */
+.topNav {
+  background-color: rgb(207, 154, 172);
+  direction: rtl;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  z-index: 2;
+}
+.topDiv img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+/* מידע על הפרוייקט */
+.onMe {
+  background-image: url(images/backgroundPink.jpg);
+  text-align: center;
+  margin-top: 100px;
+}
+.onMe h1 {
+  line-height: 3;
+}
+.onMe h5 {
+  line-height: 1;
+  direction: rtl;
+}
+.onMe button {
+  background-color: lightpink;
+  border: 1px solid rgb(218, 115, 132);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+/* אייקונים */
+.iconsDiv {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+
+.di1 {
+  background-image: url("images/Path.png");
+  text-align: center;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.di2 {
+  text-align: center;
+  direction: rtl;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.di1 h1 {
+  color: #d3e10e;
+  font-size: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2;
+}
+.di1 h3 {
+  color: #f9f9f9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2;
+}
+lable,
+.di2 button {
+  color: #011560;
+}
+.sendIt {
+  background-color: #d3e10e;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 50px;
+  width: 150px;
+  border: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+lable {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2;
+}
+.di2 input {
+  background-color: #f6f6f6;
+  height: 50px;
+  width: 400px;
+  border: none;
+  border-bottom: 4px solid #d3e10e;
+}
+/* עיצוב מובייל */
+@media (max-width: 550px) {
+  .di1 {
+    height: 30vh;
+  }
+  .di2 {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .di1 h1 {
+    font-size: 30px;
+  }
+  .di1 h3 {
+    font-size: 0.8rem;
+    margin: 10px;
+  }
+  .sendIt {
+    width: 350px;
+    margin-top: 20px;
+  }
+  .di2 input {
+    margin-bottom: 20px;
+    width: 350px;
+  }
+  .sendIt {
+    margin-bottom: 50px;
+  }
+}
+.projDiv {
+  background-color: #dfdada2f;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projDiv img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 30px;
+}

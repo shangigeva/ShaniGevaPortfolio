@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$bgc: #0ee1e1;
+$textColor: #000000;
+$boxColor: #f8f8f8;
+
+//mixin
+@mixin boxm($width: 100vw, $height: 100vh) {
+  width: $width;
+  height: $height;
+  margin: 20px;
+  background-color: rgb(34, 128, 0);
+  border: 1px solid #000;
+}
+
+@mixin flexCenter($direction, $gap) {
+  display: flex;
+  justify-content: center;
+  direction: rtl;
+  gap: $gap;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin box {
+  @include flexCenter(column, 25px);
+  background-color: $boxColor;
+  color: $textColor;
+  height: 34vh;
+  padding: 10px;
+  h1 {
+    color: $bgc;
+  }
+}
+@mixin input {
+  background-color: #e5eeff;
+  border: none;
+  border-bottom: $bgc 1px solid;
+  height: 34px;
+  width: 400px;
+}
+
+@mixin icon($bgColor) {
+  @include flexCenter(row, 0px);
+  background-color: $bgColor;
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}

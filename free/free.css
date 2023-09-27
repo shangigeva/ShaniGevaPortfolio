@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* נאב */
+.topNav {
+  background-color: rgb(207, 154, 172);
+  direction: rtl;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  z-index: 2;
+}
+.topDiv img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+/* מידע על הפרוייקט */
+.onMe {
+  background-image: url(images/backgroundPink.jpg);
+  text-align: center;
+  margin-top: 100px;
+}
+.onMe h1 {
+  line-height: 3;
+}
+.onMe h5 {
+  line-height: 1;
+  direction: rtl;
+}
+.onMe button {
+  background-color: lightpink;
+  border: 1px solid rgb(218, 115, 132);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+/* אייקונים */
+.iconsDiv {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+
+/* דף הנחיתה */
+
+.sec1 {
+  direction: rtl;
+  width: 500px;
+}
+
+.sec1 h1 {
+  color: #fdbd03;
+}
+.sec1 p {
+  color: #020253;
+  font-size: 23px;
+}
+.sec2 img {
+  height: 80vh;
+  width: 30vw;
+}
+.sec1 label {
+  color: #2c2c2c;
+}
+.sec1 input {
+  background-color: #e5eeff;
+  width: 450px;
+  height: 40px;
+  border: none;
+  border-bottom: 4px solid #fdbd03;
+}
+.sec1 button {
+  background-color: #fdbd03;
+  width: 150px;
+  height: 50px;
+  font-size: 22px;
+  border: none;
+}
+/* התאמה למובייל */
+@media (max-width: 550px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainDiv {
+    width: 100vw;
+  }
+  .sec2 img {
+    width: 100vw;
+    height: 50vh;
+  }
+  .firstH1 {
+    font-size: 28px;
+  }
+  .firstP {
+    font-size: 15px;
+  }
+  .sec1 {
+    width: 100vw;
+  }
+
+  .sendIt {
+    width: 50vw;
+  }
+  .sec1 input {
+    width: 80vw;
+  }
+}
+.projDiv {
+  background-color: #dfdada2f;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projDiv img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 30px;
+}

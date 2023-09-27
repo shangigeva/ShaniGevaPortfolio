@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        
+</head>
+
+<body>
+<!-- נאב -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgb(207, 154, 172); direction: rtl; width: 100vw; height: 100px; z-index: 2;">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="images/logo.png" alt="logo" style="width: 60px;height: 60px; border-radius: 30px;"></img>
+            <a href="#" class="navbar-brand"> Shani Geva </a>
+
+      <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse " id="navbarNav" style=" justify-content: center;font-size: 1.4rem; ">
+                <ul class="navbar-nav  " >
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">ראשי</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#AboutMe">אודות</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">פרוייקטים</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cont">צור קשר</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+      
+          <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">ראשי</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#AboutMe">אודות</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">פרוייקטים</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cont">צור קשר</a>
+                    </li>
+       
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+    <!--  Opening area -->
+    <br></div>
+    <div class="openDiv">
+        <h1>Portfolio</h1>
+        <h5>My portfolio showcases a diverse range of projects, demonstrating my skills in web development and design</h5>
+    </div>
+    <!-- Photo carousel-->
+    <div class="container1">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade"  >
+            <div class="carousel-inner"  >
+                <div class="carousel-item active" style="display: flex;justify-content: space-evenly;">
+                    <img src="images/img-OOP.png" class="d-block w-40" alt="oop">
+                    <img src="images/img-Bootstrap.png" class="d-block w-40" alt="Bootstrap">
+                    <img src="images/img-ES6.png" class="d-block w-40" alt="ES6">
+                </div>
+                <div class="carousel-item" style="display: flex;justify-content: space-evenly;">
+                    <img src="images/img-CSS.png" class="d-block w-40" alt="css">
+                    <img src="images/img-JS.png" class="d-block w-40" alt="JS">
+                    <img src="images/img-NodeJS.png" class="d-block w-40" alt="NodeJS">
+                    <img src="images/img-API.png" class="d-block w-40" alt="API">
+                </div>
+                <div class="carousel-item" style="display: flex;justify-content: space-around;
+                align-items: center; ">
+                    <img src="images/img-HTML.png" class="d-block w-40" alt="html">
+                    <img src="images/img-React.png" class="d-block w-40" alt="React">
+                    <img src="images/img-SASS.png" class="d-block w-40" alt="SASS">
+                    <img src="images/img-TypeScript.png" class="d-block w-40" alt="TypeScript">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-danger-subtle" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"  data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-danger-subtle" aria-hidden="true" ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- about me-->
+       <section class="AboutMe" id="AboutMe">
+  <div class="change">
+    <img src="images/logo.png" alt="logo" />
+    <img src="images/me.jpeg" alt="me img" class="img-top" />
+</div>
+  <h1>About Me</h1>
+  <p>Hi, I'm Shani Gava, 23 years old from Nes Ziona.</p>
+  <p>I'm a student in the Full Stack course at HackerU College.</p>
+  <p>I specialize in building and developing websites for various businesses and purposes.</p>
+  <p>I have expertise in WordPress, Bootstrap, CSS, HTML and JavaScript.</p>
+  <p>I would be delighted to work with you and create a website for any purpose 🙂</p>
+
+  <a href="resume.pdf" target="_blank" ><button class="me1"
+      href="resume.pdf"  download> להורדת קורות חיים </button></a
+  >
+</section>
+        <!-- Landing pages-->
+        <div id="gallery" class="gallery">
+<h1>Landing pages</h1>
+        <p>Landing pages from XD prototypes using HTML, CSS, and incorporated Bootstrap and SASS for enhanced styling and responsiveness</p>
+        <p>These pages provide a visually appealing and user-friendly experience based on the initial design concepts</p>
+<section>
+    <div class="container  d-flex justify-content-evenly">
+        <div class="row">
+        <div class="card bg-light col-md-3 m-2 " style="width: 14rem;">
+            <img src="images/pageCoffe.PNG" class="card-img-top" alt="coffe page">
+            <div class="card-body text-center">
+                <h5 class="card-title h5">קפה טוב לבוקר טוב</h5>
+                <p class="card-text fs-6">דף נחיתה שנבנה בעזרת HTML, CSS </p>
+                <a href="../coffe/coffe1.html" class="btn">לעמוד הפרוייקט</a>
+            </div>
+        </div>
+        <div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+            <img src="images/pageHereNow.PNG" class="card-img-top" alt="here and now page">
+            <div class="card-body text-center ">
+                <h5 class="card-title h4 mb-4">Here & Now  </h5>
+                <p class="card-text fs-6">דף נחיתה שנבנה בעזרת Bootstrap</p>
+                <a href="../hereAndNow/HereNow1.html" class="btn">לעמוד הפרוייקט</a>
+            </div>
+        </div>
+        <div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+            <img src="images/pageLetYouUp.PNG" class="card-img-top" alt="let you up page">
+            <div class="card-body text-center">
+                <h5 class="card-title h5">להוביל אותך קדימה</h5>
+                <p class="card-text fs-6">דף נחיתה שנבנה בעזרת HTML, CSS</p>
+                <a href="../letYouUp/letYouUp1.html" class="btn">לעמוד הפרוייקט</a>
+            </div>
+        </div></div>
+    </div>
+</section>
+<section>
+        <div class="container  d-flex justify-content-evenly">
+            <div class="row">
+            <div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+                <img src="images/pageLetUs.PNG" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title h5">תן לנו להוביל אותך</h5>
+                    <p class="card-text fs-6">דף נחיתה שנבנה בעזרת HTML, CSS</p>
+                    <a href="../letUs/letUs1.html" class="btn">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+            <div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+                <img src="images/pageBox.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title h5">לחשוב מחוץ ל...</h5>
+                    <p class="card-text fs-6">דף נחיתה שנבנה בעזרת SASS</p>
+                    <a href="../sass proj/Box1.html" class="btn">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+            <div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+                <img src="images/pageDiscover.PNG" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title h5">Discover the world</h5>
+                    <p class="card-tex fs-6">דף נחיתה שנבנה בעזרת HTML, CSS</p>
+                    <a href="../discover/discover1.html" class="btn">לעמוד הפרוייקט</a>
+                </div>
+            </div><div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+                <img src="images/pageFree.PNG" class="card-img-top " alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title h5">ייעוץ חינם</h5>
+                <p class="card-text fs-6">דף נחיתה שנבנה בעזרת Bootstrap</p>
+                    <a href="../free/free1.html" class="btn">לעמוד הפרוייקט</a>
+                </div>
+            </div></div>
+        </div>
+    </section>
+</div>
+ <div id="galleryJS" style="background-color: rgb(233, 229, 229);" class="gallery">
+        <h1> games</h1>
+        <p>Games I developed by using Java Script</p>
+<!-- JS projects gallery -->
+<div style="background-color:rgb(233, 229, 229);">
+    <section>
+        <div class="container  d-flex justify-content-evenly">
+            <div class="row">
+            <div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+                <img src="images/pagePoke.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title h5">POKEDEX</h5>
+  <p class="card-tex fs-6">משחק שנבנה בעזרת HTML, CSS, Bootstrap, JavaScript</p>                    <a href="../pokodex/poke1.html" class="btn">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+            <div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+                <img src="images/pageCalc.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title h5">CALCULATOR</h5>
+ <p class="card-tex fs-6">משחק שנבנה בעזרת HTML, CSS, Bootstrap, JavaScript</p>                        <a href="../calculator/calculator1.html" class="btn">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+            <div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+                <img src="images/pageTictactoe.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title h5">TIC TAC TOE</h5>
+ <p class="card-tex fs-6">משחק שנבנה בעזרת HTML, CSS, Bootstrap, JavaScript</p>                        <a href="../ticTacToe/js_x01.html" class="btn">לעמוד הפרוייקט</a>
+                </div>
+            </div></div>
+        </div>
+    </section>
+    <section>
+        <div class="container  d-flex justify-content-evenly">
+            <div class="row"><div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+                <img src="images/pageQuiz.png" class="card-img-top " alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title h5">Quiz</h5>
+ <p class="card-tex fs-6">משחק שנבנה בעזרת HTML, CSS, Bootstrap, JavaScript</p>                        <a href="../quiz/quiz1.html" class="btn">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+            <div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+                <img src="images/pageMemory.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title h5">memory game</h5>
+  <p class="card-tex fs-6">משחק שנבנה בעזרת HTML, CSS, Bootstrap, JavaScript</p>                    <a href="../memoryGame/memory1.html" class="btn">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+            <div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+                <img src="images/pageList.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title h5">Shopping cart list</h5>
+ <p class="card-tex fs-6">משחק שנבנה בעזרת HTML, CSS, Bootstrap, JavaScript</p>                        <a href="../cartList/cart1.html" class="btn">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+            <div class="card bg-light col-md-3 m-2" style="width: 14rem;">
+                <img src="images/pageWeather.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title h5">Weather</h5>
+ <p class="card-tex fs-6">משחק שנבנה בעזרת HTML, CSS, Bootstrap, JavaScript</p>                        <a href="../weather/weather1.html" class="btn">לעמוד הפרוייקט</a>
+                </div>
+            </div></div>
+        </div>
+    </section>
+</div>
+
+
+  <!-- contact area -->
+    <div class="contact" id="cont">
+        <section>
+            <div>
+                <h1>צור קשר</h1>
+                <p>אהבתם ואתם מעוניינים שאבנה לכם אתר? השאירו פרטים ואחזור אליכם בהקדם</p>
+                <label for="">שם מלא</label><br>
+                <input type="text" id="fullName"> <br>
+                <label for="">דוא"ל</label><br>
+                <input type="email" id="email"><br>
+                <label for="">טלפון</label><br>
+                <input type="text" id="phone"><br>
+                <label for="">תוכן ההודעה</label><br>
+                <input type="text" id="message"><br>
+                <button onclick="clearInputFields()">שליחה</button>
+            </div>
+            <img src="images/envelope.png" alt="envelope" class="envelope">
+        </section>
+    </div>
+        <!-- Lower area - nets-->
+        <div class="downArea">
+            <ul>
+                <li><img src="images/IconFacebook.png" alt="Icon Facebook"></li>
+                <li><img src="images/Iconlinkedin.png" alt="Icon linkedin"></li>
+                <li><img src="images/IconPhone.png" alt="IconPhone"></li>
+                <li><img src="images/IconWhatsap.png" alt="Icon Whatsap"></li>
+                <li><img src="images/IconEmail.png" alt="Icon Email"></li>
+                <li><img src="images/IconLocation.png" alt="Icon Location"></li>
+            </ul>
+            <ul>
+                <li>shanigevaa</li>
+                <li>shani geva</li>
+                <li>054-4655700</li>
+                <li>054-4655700</li>
+                <li>shanig7@gmail.com</li>
+                <li>Ness-Zionna</li>
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <div class="copy">
+            <p>כל הזכויות שמורות &copy; Shani Geva</p>
+        </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+  <script>// Clear the value of the input field after click send
+        function clearInputFields() {
+            document.getElementById('fullName').value = ''; 
+            document.getElementById('email').value = ''; 
+            document.getElementById('phone').value = ''; 
+            document.getElementById('message').value = ''; 
+        }
+    </script>
+</body>
+
+</html>

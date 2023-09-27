@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Rubik+Dirt&family=Rubik+Spray+Paint&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* נאב */
+.topNav {
+  background-color: rgb(207, 154, 172);
+  direction: rtl;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  z-index: 2;
+}
+.topDiv img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+/* מידע על הפרוייקט */
+.onMe {
+  background-image: url(images/backgroundPink.jpg);
+  text-align: center;
+  margin-top: 100px;
+}
+.onMe h1 {
+  line-height: 3;
+}
+.onMe h5 {
+  line-height: 1;
+  direction: rtl;
+}
+.onMe button {
+  background-color: lightpink;
+  border: 1px solid rgb(218, 115, 132);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+/* אייקונים */
+.iconsDiv {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+/* דף הנחיתה */
+.pic img {
+  width: 100%;
+  height: 50vh;
+}
+
+section {
+  width: 500px;
+  height: 600px;
+  background-color: #1a1a1ad4;
+  direction: rtl;
+  padding: 50px;
+  color: #fff;
+  position: absolute;
+  top: 30vh;
+  right: 150px;
+  z-index: 2;
+}
+.white {
+  width: 100vw;
+  height: 400px;
+}
+section h1 {
+  font-size: 30px;
+  text-align: right;
+  margin-top: 50px;
+  font-family: "Rubik Dirt", cursive;
+}
+section h4 {
+  text-align: right;
+  font-size: 1rem;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: "Varela Round", sans-serif;
+  width: 350px;
+}
+section form {
+  font-family: "Varela Round", sans-serif;
+}
+section label {
+  text-align: right;
+}
+section input {
+  border: 1px solid #d31c75;
+  width: 350px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+section button {
+  background-color: #d31c75;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  font-size: 1.3rem;
+  font-family: "Varela Round", sans-serif;
+  border: none;
+}
+
+/* מובייל */
+
+@media (max-width: 550px) {
+  section {
+    width: 350px;
+    height: 500px;
+    padding: 20px;
+    position: absolute;
+    right: 20px;
+  }
+  section h1 {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  section input {
+    width: 250px;
+  }
+  section h4 {
+    width: 250px;
+  }
+}
+.projDiv {
+  background-color: #dfdada2f;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projDiv img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 30px;
+}

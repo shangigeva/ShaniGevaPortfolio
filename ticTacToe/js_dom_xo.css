@@ -1,0 +1,236 @@
+@import url("https://fonts.cdnfonts.com/css/tualang");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} /* נאב */
+.topNav {
+  background-color: rgb(207, 154, 172);
+  direction: rtl;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  z-index: 2;
+}
+.topDiv img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+/* מידע על הפרוייקט */
+.onMe {
+  background-image: url(images/backgroundPink.jpg);
+  text-align: center;
+  margin-top: 100px;
+}
+.onMe h1 {
+  line-height: 3;
+}
+.onMe h5 {
+  line-height: 1;
+  direction: rtl;
+}
+.onMe button {
+  background-color: lightpink;
+  border: 1px solid rgb(218, 115, 132);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+/* אייקונים */
+.iconsDiv {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+.projDiv {
+  background-color: #dfdada2f;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projDiv img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 30px;
+}
+
+/* Styling the h1 */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 10px;
+  color: #78559e;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Tualang", sans-serif;
+}
+/* Styling the board */
+.game-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.3rem;
+  width: 300px;
+  height: 300px;
+  background-color: #cbadeb;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Tualang", sans-serif;
+}
+
+.game-wrapper > div {
+  width: 100%;
+  height: 100%;
+  background-color: #dfe6e9;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+/* hover the boxes */
+
+.game-wrapper > div:hover {
+  background-color: #b2bec3;
+}
+
+/* Styling the popup */
+#popup {
+  width: 500px;
+  max-width: 90%;
+  background-color: rgba(231, 92, 201, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  text-align: center;
+  font-size: 1.5rem;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* styling the button */
+#playAgainBtn {
+  display: block;
+  padding: 8px 15px;
+  background-color: #78559e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+  /* position: absolute;
+  top: 80%;
+  left: 55%; */
+  width: 120px;
+  height: 100px;
+
+  transform: translateX(-50%);
+}
+/* hover the button */
+#playAgainBtn:hover {
+  background-color: #9c70cc;
+}
+/* styling the who play now */
+#turnDisplay {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #9d64da;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* styling the score board */
+#whoWin {
+  /* position: absolute;
+  top: 80%;
+  right: 55%; */
+  width: 120px;
+  height: 100px;
+  text-align: center;
+  background-color: #78559e7c; /* Purple background color */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr) 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#whoWin h2 {
+  width: 100%;
+  grid-column: 1/3;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+#whoWin #X {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: #9c70cc96; /* Lighter purple background color */
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 5px;
+}
+
+#whoWin #O {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #6c50a896; /* Darker purple background color */
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 5px;
+}
+
+#oScore,
+#xScore {
+  font-size: 1rem;
+  padding: 5px;
+}
+.theBottom {
+  position: absolute;
+  top: 80%;
+  left: 52%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 550px) {
+  .game-wrapper {
+    top: 35%;
+    left: 50%;
+    margin-top: 20%;
+    height: 350px;
+  }
+  #whoWin {
+    width: 80px;
+  }
+  #playAgainBtn {
+    width: 80px;
+  }
+}
